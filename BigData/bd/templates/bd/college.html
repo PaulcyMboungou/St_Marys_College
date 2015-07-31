@@ -1,0 +1,61 @@
+<!-- paulcy.mboungou@gmail.com -->
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>St Mary's College</title>
+	<link rel="stylesheet" type="text/css" href="{% static "bd/css/index.css" %}">
+</head>
+<body>
+	<center>
+		<div class="menu">{% csrf_token %}
+    		<ul>
+	    		<li><span></span><a href="{% url 'bd:index' %}">HOME</a></li>
+	    		<li><span></span><a href="{% url 'bd:agenda' %}">AGENDA</a></li>
+	   			<li><span></span><a href="{% url 'bd:college' %}">COLLEGE</a></li>
+    			<li><span></span><a href="{% url 'bd:contact' %}">CONTACT</a></li>
+    		</ul>
+		</div>	
+	</center>
+
+	<center>
+	<table width="60%"  valign="top" align="center" bgcolor="#F8F8F8">
+		<tr>
+			<td><font font size="5">
+				<h1 align="center" ><font color=#47D147 size=6>ABOUT THE COLLEGE</font></h1>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;St. Mary's College is a self financed Christian Minority institution, affiliated to Osmania University, Hyderabad. The College is run by St Mary's Educational Society that was established in 1982 by like-minded academicians and the Society has been running a junior college for 33 years. St Mary's is the "most happening college" with excellent infrastructure and facilities. It attracts students not only from other states but also from countries like China, South Korea, Cameroon, Congo etc. Keeping with the changing times, over the years the institution has adopted innovative academic practices that cater to the diverse needs of the students.<br> The management leaves no stone unturned to give the best to the students.</p>
+				</font>
+		    </td>
+		</tr>
+		<tr>
+			<td>
+				<center><img src="{% static "bd/images/stm.jpg" %}" alt="college"/></center>
+			</td>
+		</tr>
+	</table></center>
+	<br>
+
+	<center>
+  	<table width="90%" class="college" bgcolor="#f8f8f8">
+  <tr>
+    <th scope="col">POWERED BY</th>
+    <th scope="col">ADDRESS</th>
+    <th scope="col">CONTACT US</th>
+    <th scope="col">OUR COLLEGE</th>
+  </tr>
+  <tr>
+  	<td class="copyright"> #KSC-CONGO <br> paulcy.mboungou@gmail.com <br>Copyright &copy; 2015 </td>
+    <td class="addressFooter">St. Marys's College
+                     <br>
+                     Youssufguda, Hyderabad - 5000045
+                     <br>
+                     Telangana State, India
+                     </td>
+    <td class="me">+91-40-23544300, 23545642 <br> 9440011499</td>
+    <td><center><img src="{% static "bd/images/college.gif" %}" alt="college"/></center></td>
+  </tr>
+</table>
+  </center>
+
+ </body>
+ </html>

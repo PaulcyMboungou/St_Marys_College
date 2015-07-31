@@ -1,0 +1,66 @@
+<!-- paulcy.mboungou@gmail.com -->
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>St Mary's BigData Even | Agenda</title>
+	<link rel="stylesheet" type="text/css" href="{% static "bd/css/index.css" %}">
+</head>
+<body>
+	<center>
+		<div class="menu">{% csrf_token %}
+    		<ul>
+	    		<li><span></span><a href="{% url 'bd:index' %}">HOME</a></li>
+	    		<li><span></span><a href="{% url 'bd:agenda' %}">AGENDA</a></li>
+	   			<li><span></span><a href="{% url 'bd:college' %}">COLLEGE</a></li>
+    			<li><span></span><a href="{% url 'bd:contact' %}">CONTACT</a></li>
+    		</ul>
+		</div>	
+	</center>
+
+	<center>
+	<table width="60%" height='80%' valign="top" align="center" bgcolor="#F8F8F8">
+		<tr>
+			<td><font font size="5">
+				<h1 align="center" ><font color=#47D147 size=6>TENTATIVE SCHEDULE</font></h1>
+				<p>&nbsp;09:00 AM - 09:30 AM &nbsp;&nbsp;&nbsp;&nbsp;<b>Registration</b></p>
+				<p>&nbsp;09:30 AM - 09:45 AM &nbsp;&nbsp;&nbsp;&nbsp;<b>Inaugural Address</b></p>
+				<p>&nbsp;09:45 AM - 10:30 AM &nbsp;&nbsp;&nbsp;&nbsp;<b>Keynote Address</b></p>
+				<p>&nbsp;10:30 AM - 11:00 AM &nbsp;&nbsp;&nbsp;&nbsp;<b>Tea Break</b></p>
+				<p>&nbsp;11:00 AM - 12:30 PM &nbsp;&nbsp;&nbsp;&nbsp;<b>Session - I :<i> BIG DATA SECURITY</i></b></p>
+				<p>&nbsp;12:30 PM - 01:00 PM &nbsp;&nbsp;&nbsp;&nbsp;<b>Presentation</b></p>
+				<p>&nbsp;01:00 PM - 02:00 PM &nbsp;&nbsp;&nbsp;&nbsp;<b>Lunch</b></p>
+				<p>&nbsp;02:00 PM - 03:30 PM &nbsp;&nbsp;&nbsp;&nbsp;<b>Session - II :<i> CYBER SECURITY</i></b></p>
+				<p>&nbsp;03:30 PM - 04:00 PM &nbsp;&nbsp;&nbsp;&nbsp;<b>Presentations</b></p>
+				<p>&nbsp;04:00 PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Valedictory</b></p>
+				</font>
+		    </td>
+		</tr>
+		
+	</table></center>
+	<br>
+
+	<center>
+  	<table width="90%" bgcolor="#f8f8f8">
+  <tr>
+    <th scope="col">POWERED BY</th>
+    <th scope="col">ADDRESS</th>
+    <th scope="col">CONTACT US</th>
+    <th scope="col">OUR COLLEGE</th>
+  </tr>
+  <tr>
+  	<td class="copyright"> #KSC-CONGO <br> paulcy.mboungou@gmail.com <br>Copyright &copy; 2015 </td>
+    <td class="addressFooter">St. Marys's College
+                     <br>
+                     Youssufguda, Hyderabad - 5000045
+                     <br>
+                     Telangana State, India
+                     </td>
+    <td class="me">+91-40-23544300, 23545642 <br> 9440011499</td>
+    <td><center><img src="{% static "bd/images/college.gif" %}" alt="college"/></center></td>
+  </tr>
+</table>
+  </center>
+
+ </body>
+ </html>
